@@ -19,7 +19,7 @@ void receiveEvent(int howMany) {
     delay(100);
   }
 }
-
+						//Header for this shit will be made soon
 
 byte bar1[8] = 
 {
@@ -110,11 +110,11 @@ byte bar8[8] =
         B00000
 };
   
-LiquidCrystal_I2C lcd(0x3e,16,2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+LiquidCrystal_I2C lcd(0x3e,16,2);
 
 
 void custom0(int col)
-{ // uses segments to build the number 0
+{ // uses segments to build numbers/letters
   lcd.setCursor(col, 0); 
   lcd.write(2);  
   lcd.write(8); 
