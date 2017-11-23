@@ -13,7 +13,7 @@
 byte x,y,z;
 // function that executes whenever data is received from master
 // this function is registered as an event, see setup()
-void receiveEvent(int howMany) {
+void receiveEvent(int msg_length) {
   while (1 < Wire.available()) { // loop through all but the last
     x = Wire.read();
     y = Wire.read();
