@@ -1,6 +1,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
+#define LCD_ADDRESS 0x3E
+
 #if defined(ARDUINO) && ARDUINO >= 100
 #define printByte(args)  write(args);
 #else
@@ -255,7 +257,7 @@ void printNumber(int value, int col) {
   }      
 }  
 
-LiquidCrystal_I2C lcd(0x3e,16,2);
+LiquidCrystal_I2C lcd(LCD_ADDRESS,16,2);
 
 void setup()
 {
