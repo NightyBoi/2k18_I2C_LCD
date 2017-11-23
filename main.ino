@@ -109,8 +109,6 @@ byte bar8[8] =
         B00000,
         B00000
 };
-  
-LiquidCrystal_I2C lcd(0x3e,16,2);
 
 
 void custom0(int col)
@@ -256,6 +254,8 @@ void printNumber(int value, int col) {
     custom9(col);
   }      
 }  
+
+LiquidCrystal_I2C lcd(0x3e,16,2);
 
 void setup()
 {
